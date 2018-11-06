@@ -7,9 +7,13 @@ Project("{6870E480-7721-4708-BFB8-9AE898AA21B3}") = "AW Internet Sales", "AW Int
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Azure|x86 = Azure|x86
 		Development|x86 = Development|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Azure|x86.ActiveCfg = Azure|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Azure|x86.Build.0 = Azure|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Azure|x86.Deploy.0 = Azure|x86
 		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.ActiveCfg = Development|x86
 		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.Build.0 = Development|x86
 		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.Deploy.0 = Development|x86
