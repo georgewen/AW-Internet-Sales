@@ -5909,6 +5909,53 @@
                 }
               ]
             }
+          },
+          {
+            "name": "InternetCurrentQuarterMarginPerformance",
+            "expression": "IF([InternetPreviousQuarterMarginProportionToQTD]<>0,([InternetCurrentQuarterMargin]-[InternetPreviousQuarterMarginProportionToQTD])/[InternetPreviousQuarterMarginProportionToQTD],BLANK())  ",
+            "kpi": {
+              "targetExpression": "1.25",
+              "statusGraphic": "Shapes",
+              "statusExpression": [
+                "var x='FactInternetSales'[InternetCurrentQuarterMarginPerformance] return",
+                "            if(ISBLANK(x),BLANK(),",
+                "                    If(x<0.8,-1,",
+                "\t                If(x<1.03,0,1)",
+                "                )",
+                "            )",
+                "            "
+              ],
+              "annotations": [
+                {
+                  "name": "GoalType",
+                  "value": "StaticValue"
+                },
+                {
+                  "name": "KpiStatusType",
+                  "value": "Linear"
+                },
+                {
+                  "name": "KpiThresholdType",
+                  "value": "Absolute"
+                },
+                {
+                  "name": "KpiThresholdOrdering",
+                  "value": "Ascending"
+                },
+                {
+                  "name": "KpiThresholdCount",
+                  "value": "2"
+                },
+                {
+                  "name": "KpiThreshold_0",
+                  "value": "0.8"
+                },
+                {
+                  "name": "KpiThreshold_1",
+                  "value": "1.03"
+                }
+              ]
+            }
           }
         ],
         "annotations": [
